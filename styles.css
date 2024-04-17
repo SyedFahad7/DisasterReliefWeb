@@ -4,16 +4,19 @@ body {
     padding: 0;
     overflow-x: hidden;
     position: relative;
+    background-color: #333;
 }
 
 nav {
     background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -37,6 +40,18 @@ nav a:hover {
     color: #ff6600;
 }
 
+.brand {
+    color: #ddd;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: auto; /* Pushes the brand to the left */
+}
+
+.developer {
+    color: #ddd;
+    margin-left: auto;
+    margin-right: 50px; /* Pushes the "Developed by" text to the right */
+}
 
 .container {
     background-color: rgba(249, 249, 249, 0.2);
@@ -70,15 +85,6 @@ nav a:hover {
         width: calc(100% - 20px); 
         margin: 10px auto; 
     }
-}
-
-#video-bg {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 0;
 }
 
 header,

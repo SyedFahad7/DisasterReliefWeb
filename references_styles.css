@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+.brand {
+    color: #ddd;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: auto; /* Pushes the brand to the left */
+}
+
+.developer {
+    color: #ddd;
+    margin-left: auto;
+    margin-right: 50px; /* Pushes the "Developed by" text to the right */
+}
+
+
+.main {
+    padding-top: 60px; /* Adjust for navbar height */
+}
+
+.references-container {
+    padding: 20px;
+}
+
+.references-list,
+.images-list {
+    list-style: none;
+    padding: 0;
+}
+
+.references-list li,
+.images-list li {
+    margin-bottom: 20px;
+}
+
+.references-list li a,
+.images-list li a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+.references-list li a:hover,
+.images-list li a:hover {
+    color: #ff6600;
+    z-index: 1;
+}
+
+.references-list li a:before,
+.images-list li a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6600;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.references-list li a:hover:before,
+.images-list li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.reference-description,
+.image-description {
+    color: #666;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-project {
+    margin-top: auto;
+}
