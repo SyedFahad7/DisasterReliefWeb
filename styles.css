@@ -1,76 +1,72 @@
-/* Base styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Hide horizontal scrollbar caused by video */
-    position: relative; /* Set body position to relative */
+    overflow-x: hidden;
+    position: relative;
 }
 
-/* Container styles */
 .container {
-    background-color: rgba(249, 249, 249, 0.2); /* Off-white background color with opacity */
-    margin: 20px 10px; /* Center the container with a gap on both left and right sides */
+    background-color: rgba(249, 249, 249, 0.2);
+    margin: 20px 10px;
     padding: 20px;
-    border-radius: 15px; /* Rounded borders */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Add smooth transition for hover effect */
-    width: calc(100% - 20px); /* Make the container slightly smaller than the whole page */
-    position: relative; /* Set container position to relative */
-    z-index: 1; /* Set container z-index higher than video background */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: calc(100% - 20px);
+    position: relative;
+    z-index: 1;
 }
 
 .container:hover {
-    transform: translateY(-5px); /* Move the container slightly up on hover */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-    background-color: rgba(249, 249, 249, 0.9); /* Increase opacity on hover */
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(249, 249, 249, 0.9);
 }
 
-/* Video background styles */
 #video-bg {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: 0; /* Ensure the video stays behind the container */
+    z-index: 0;
 }
 
-
-header, footer {
-    background-color: #f2f2f2;
+header,
+footer {
+    background-color: #b43a3a;
     padding: 20px;
-    opacity: 0; /* Set initial opacity to 0 for fade-in effect */
-    animation: fadeIn 1.5s ease forwards; /* Apply fade-in animation */
-    text-align: center; /* Center-align the content */
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    text-align: center;
 }
 
 h1 {
-    font-family: 'Arial Black', sans-serif; /* Use a bold font for h1 */
-    font-size: 3em; /* Increase font size for h1 */
-    color: #333; /* Darken the text color */
-    margin-bottom: 10px; /* Add some bottom margin for separation */
-    transition: color 10s, font-size 0.3s; /* Add transition for color and font-size */
+    font-family: 'Arial Black', Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 10s, font-size 0.3s;
 }
 
 h1:hover {
-    color: #ff6600; /* Change color on hover */
-    font-size: 3.2em; /* Increase font size on hover */
+    color: #ff6600;
+    font-size: 3.2em;
 }
 
 p {
-    font-size: 1.4em; /* Increase font size for paragraphs */
-    color: #666; /* Darken the text color */
-    line-height: 1.6; /* Add some line spacing for readability */
+    font-size: 1.4em;
+    color: #666;
+    line-height: 1.6;
 }
 
-/* Hover effect for header and footer */
-header:hover, footer:hover {
+header:hover,
+footer:hover {
     background-color: #ddd;
     cursor: pointer;
 }
 
-/* Animation keyframes for fade-in effect */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -80,14 +76,12 @@ header:hover, footer:hover {
     }
 }
 
-/* Other styles remain unchanged */
-
-
 section {
     padding: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #333;
 }
 
@@ -95,17 +89,14 @@ footer {
     text-align: center;
 }
 
-/* Other styles remain unchanged */
-
 .paragraph-wrapper {
-    grid-column: span 4; /* Ensure the wrapper spans across all 4 columns */
-    margin-top: 0; /* Remove any top margin */
+    grid-column: span 4;
+    margin-top: 0;
 }
 
 .paragraph-wrapper p {
-    margin-top: 50px; /* Add a small top margin for the paragraph */
+    margin-top: 50px;
 }
-
 
 .image-gallery {
     display: grid;
@@ -124,14 +115,14 @@ footer {
 .image-gallery img:hover {
     transform: scale(1.1);
 }
-/* Footer styles */
+
 .footer {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Light text color */
+    background-color: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
-    position: relative; /* Set footer position to relative */
-    z-index: 1; /* Ensure the footer stays above the video background */
+    position: relative;
+    z-index: 1;
 }
 
 .footer-content {
@@ -141,9 +132,9 @@ footer {
 }
 
 .footer-project {
-    margin-top: 10px; /* Add some top margin for separation */
+    margin-top: 10px;
 }
-/* CSS for blinking animation */
+
 @keyframes blink {
     50% {
         opacity: 0;
@@ -151,5 +142,5 @@ footer {
 }
 
 .blink {
-    animation: blink 1s infinite; /* Apply blinking animation */
+    animation: blink 1s infinite;
 }
